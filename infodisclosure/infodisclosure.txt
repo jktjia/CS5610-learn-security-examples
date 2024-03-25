@@ -1,3 +1,8 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 Which CIA property does tampering violate?
 What additional security mechanisms can you incorporate?
+
+By changing the url to have some query (such as [$ne= ]) for all of the user information, anyone could 
+get access to all of the user info.
+
+Violates C - confidentiality

@@ -1,0 +1,5 @@
+If the input to the text box is html, then it can be used to change 
+the behavior of the webpage. The secure version sanitizes the input
+into a string which can't do that.
+
+Violates I - integrity.

@@ -1,1 +1,6 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+Someone could get access to the session id in the cookie and use that id to send requests
+to the server pretending to be someone else. 
+
+Violates C - confidentiality
