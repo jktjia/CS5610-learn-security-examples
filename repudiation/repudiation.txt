@@ -1,2 +1,7 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+Events are simply logged in the console in the insecure version, and nothing is logged when something goes wrong, so it's 
+hard to track where and when an attack was made or something went wrong. The secure version logs all requests and errors,
+along with when they happened in a separate file on the server end. This could be improved by having only allowing certain users
+to access server.log so it can't be tampered with.

@@ -1,0 +1,4 @@
+Anyone could pretend they were admin if they found the id for admin because there's nothing checking that
+the session is associated with the id for admin. The more secure version checks the session's userId is the
+same as that of the request body. This is still vulnerable to spoofing, so the security could be improved 
+by making the cookie http only and same site only.

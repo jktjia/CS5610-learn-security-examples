@@ -1,2 +1,6 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+Because there is no try/catch and the inputs aren't sanitized, if an invalid input is entered the server
+crashes. Adding a try/catch and sanitizing the input so invalid inputs can't be entered would prevent 
+these kinds of attacks.
