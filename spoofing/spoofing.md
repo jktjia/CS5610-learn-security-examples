@@ -30,5 +30,10 @@ This example demonstrates spoofind through two ways -- Stealing cookies programm
 ## For you to answer
 
 1. Briefly explain the spoofing vulnerability in **insecure.ts**.
+The cookie can be read programmatically, so malicious programs can read the cookie and then spoof the cookie and send malicious requests to the server.
+
 2. Briefly explain different ways in which vulnerability can be exploited.
+Malicious programs can read the cookie and then spoof the cookie and send requests to the server that they aren't supposed to be able to access.
+
 3. Briefly explain why **secure.ts** does not have the spoofing vulnerability in **insecure.ts**.
+The cookie in secure.ts is http only, so programs cannot read and steal the cookie.

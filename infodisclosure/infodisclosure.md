@@ -31,5 +31,8 @@ This will create a database in MongoDB called __infodisclosure__. Verify its pre
 Answer the following:
 
 1. Briefly explain the potential vulnerabilities in **insecure.ts**
+The username is not sanitized in any way. When it is used in findOne, it is converted into a string, but that's it.
 2. Briefly explain how a malicious attacker can exploit them.
+An attacker could input noSQL code in as a username and get the server to give them other user's information.
 3. Briefly explain the defensive techniques used in **secure.ts** to prevent the information disclosure vulnerability?
+The secure version sanitizes the username input by removing all characters that aren't whitespace or alphanumeric characters, so a noSQL attack isn't possible.
