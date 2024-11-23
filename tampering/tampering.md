@@ -25,8 +25,8 @@ This example demonstrates tampering through script injection.
 Answer the following:
 
 1. Briefly explain the potential vulnerabilities in **insecure.ts**
-The input to register doesn't get sanitized, allowing for script injection attacks.
+The input to '/register' doesn't get sanitized, allowing for script injection attacks.
 2. Briefly explain how a malicious attacker can exploit them.
-
+If an attacker inputs html when they register, then the behavior of the page from '/' will be tampered with.
 3. Briefly explain why **secure.ts** does not have the same vulnerabilties?
-**secure.ts** sanitizes inputs to prevent XSS attacks.
+**secure.ts** sanitizes inputs to remove important html characters to prevent XSS attacks.
