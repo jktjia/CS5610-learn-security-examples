@@ -31,5 +31,8 @@ This will create a database in MongoDB called __infodisclosure__. Verify its pre
 Answer the following:
 
 1. Briefly explain the potential vulnerabilities in **insecure.ts** that can lead to a DoS attack.
+There is no accounting for errors thrown by findOne, so if something goes wrong, then the whole server will crash.
 2. Briefly explain how a malicious attacker can exploit them.
+If the attacker inputs an id causes findOne to crash, the error would cause the whole server to stop, causing denial of service 
 3. Briefly explain the defensive techniques used in **secure.ts** to prevent the DoS vulnerability?
+secure.ts adds a try/catch so a bad input doesn't crash the sever
